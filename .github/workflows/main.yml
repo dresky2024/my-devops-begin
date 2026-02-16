@@ -1,15 +1,25 @@
-name: Build My Docker Image
-on: [push] # Запускать при каждом push в репозиторий
+name: Build and Push to Docker Hub
+
+on:
+  push:
+    branches: [ "main" ]
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build Docker Image
-        run: docker build -t my-test-image .
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Verify build
-        run: echo "Docker build successful!"
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-devops-begin:latest
