@@ -905,3 +905,357 @@
 [2025-07-06T10:14:54.569369186Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (711.808µs)
 [2025-07-06T10:14:54.569452050Z][docker-desktop-user-distro.ipc] (f7c99edf-3) 2ce5d951-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
 [2025-07-06T10:14:54.570679864Z][docker-desktop-user-distro.ipc] (f7c99edf-3) 2ce5d951-LinuxProxyCMD C<-S 91c611c9-BackendAPI POST /idle/api-call-stop (1.25831ms): OK
+-------------------------------------------------------------------------------->8
+[2026-02-16T18:54:57.001696718Z][docker-desktop-user-distro.version][W] failed to read component versions: open /opt/docker-desktop/componentsVersion.json: no such file or directory
+[2026-02-16T18:54:57.005739904Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/extension-manager.sock to 0660
+[2026-02-16T18:54:57.005789229Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/modules-manager.sock to 0660
+[2026-02-16T18:54:57.005804680Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/docker-desktop-build.sock to 0660
+[2026-02-16T18:54:57.005875564Z][docker-desktop-user-distro.ipc] 00593d23-LinuxProxyCMD -> /mnt/wsl/docker-desktop/shared-sockets/host-services/backend.sock BackendAPI
+[2026-02-16T18:54:57.005908108Z][docker-desktop-user-distro.apiproxy] Requested propagation is rprivate. Skipping mount-point propagation check for /var/run/docker.sock
+[2026-02-16T18:54:57.006357791Z][docker-desktop-user-distro.apiproxy] mounting /var/run/docker.sock to /mnt/wsl/docker-desktop-bind-mounts/Ubuntu/docker.sock
+[2026-02-16T18:54:57.007551699Z][docker-desktop-user-distro.ipc] 3cf083a3-WSLIntegrationProxy -> /mnt/wsl/docker-desktop/shared-sockets/host-services/backend.sock BackendCLI
+[2026-02-16T18:54:57.007747604Z][docker-desktop-user-distro.ipc] f0c3d136-CrossDistroService -> /var/run/docker.sock WSL2DistroProxy
+[2026-02-16T18:54:57.008263303Z][docker-desktop-user-distro.ipc] run 13139372-cross-distro for component Ubuntu on /mnt/wsl/docker-desktop/shared-sockets/guest-services/distro-services/ubuntu.sock
+[2026-02-16T18:54:57.008292456Z][docker-desktop-user-distro.ipc] starting eb254a64-dockerCLISock for component WSLIntegrationProxy on /var/run/docker-cli.sock
+[2026-02-16T18:54:57.010585039Z][docker-desktop-user-distro.version][W] failed to read component versions: open /opt/docker-desktop/componentsVersion.json: no such file or directory
+[2026-02-16T18:54:57.016449570Z][docker-desktop-user-distro] creating symlink for /usr/bin/docker-credential-desktop.exe
+[2026-02-16T18:54:57.016862740Z][docker-desktop-user-distro] cli tools directory /mnt/wsl/docker-desktop/cli-tools has contents
+[2026-02-16T18:54:57.016900276Z][docker-desktop-user-distro] populating cli tools from /mnt/wsl/docker-desktop/cli-tools
+[2026-02-16T18:54:57.017404995Z][docker-desktop-user-distro] creating symlink for /usr/bin/compose-bridge
+[2026-02-16T18:54:57.017504508Z][docker-desktop-user-distro][W] skipping symlink for /usr/bin/docker, binary found
+[2026-02-16T18:54:57.017622876Z][docker-desktop-user-distro] creating symlink for /usr/bin/hub-tool
+[2026-02-16T18:54:57.017977042Z][docker-desktop-user-distro] creating symlink for /usr/local/bin/kubectl
+[2026-02-16T18:54:57.019670295Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-ai
+[2026-02-16T18:54:57.020400427Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-buildx
+[2026-02-16T18:54:57.020542504Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-cloud
+[2026-02-16T18:54:57.020644455Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-compose
+[2026-02-16T18:54:57.020734030Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-debug
+[2026-02-16T18:54:57.020821676Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-desktop
+[2026-02-16T18:54:57.020931452Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-extension
+[2026-02-16T18:54:57.021435353Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-init
+[2026-02-16T18:54:57.022133712Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-mcp
+[2026-02-16T18:54:57.022254124Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-model
+[2026-02-16T18:54:57.022347579Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-sbom
+[2026-02-16T18:54:57.022474574Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-scout
+[2026-02-16T18:54:57.024121916Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/bash-completion/completions/docker, binary found
+[2026-02-16T18:54:57.025196337Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/fish/vendor_completions.d/docker.fish, binary found
+[2026-02-16T18:54:57.025533749Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/zsh/vendor-completions/_docker, binary found
+[2026-02-16T18:54:57.025586503Z][docker-desktop-user-distro] cli tools successfully installed
+[2026-02-16T18:54:57.025819074Z][docker-desktop-user-distro] creating symlink for /usr/bin/docker-compose
+[2026-02-16T18:54:57.025952900Z][docker-desktop-user-distro] docker-desktop-user-distro proxy has started
+[2026-02-16T18:54:58.131959889Z][docker-desktop-user-distro.ipc] (d3ec7aa7-0-1) 13139372-cross-distro S<-C 76bba9f1-cross-distro-router GET /check
+[2026-02-16T18:54:58.132055572Z][docker-desktop-user-distro.ipc] (d3ec7aa7-0-1-1) f0c3d136-CrossDistroService C->S WSL2DistroProxy GET /desktop-diagnostics/ping
+[2026-02-16T18:54:58.132479724Z][docker-desktop-user-distro.ipc] (746ef860-0) 00593d23-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/desktop-diagnostics/ping","userAgent":"..."}
+[2026-02-16T18:54:58.134579018Z][docker-desktop-user-distro.ipc] (746ef860-0) 00593d23-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.134305ms): OK
+[2026-02-16T18:54:58.134656451Z][docker-desktop-user-distro.ipc] (746ef860-1) 00593d23-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/desktop-diagnostics/ping","userAgent":"..."}
+[2026-02-16T18:54:58.135750874Z][docker-desktop-user-distro.ipc] (746ef860-1) 00593d23-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.11763ms): OK
+[2026-02-16T18:54:58.135859875Z][docker-desktop-user-distro.ipc] (d3ec7aa7-0-1-1) f0c3d136-CrossDistroService C<-S UnknownServer GET /desktop-diagnostics/ping (3.819036ms): OK
+[2026-02-16T18:54:58.135906818Z][docker-desktop-user-distro.ipc] (d3ec7aa7-0-1) 13139372-cross-distro S->C 76bba9f1-cross-distro-router GET /check (3.954013ms): OK
+[2026-02-16T19:01:13.997150141Z][docker-desktop-user-distro] docker-desktop-proxy has terminated on signal terminated
+-------------------------------------------------------------------------------->8
+[2026-02-16T19:01:17.145991069Z][docker-desktop-user-distro.version][W] failed to read component versions: open /opt/docker-desktop/componentsVersion.json: no such file or directory
+[2026-02-16T19:01:17.146495458Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/extension-manager.sock to 0660
+[2026-02-16T19:01:17.146533312Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/modules-manager.sock to 0660
+[2026-02-16T19:01:17.146543281Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/docker-desktop-build.sock to 0660
+[2026-02-16T19:01:17.146566325Z][docker-desktop-user-distro.ipc] 9bfd17c4-LinuxProxyCMD -> /mnt/wsl/docker-desktop/shared-sockets/host-services/backend.sock BackendAPI
+[2026-02-16T19:01:17.146654860Z][docker-desktop-user-distro.apiproxy] Requested propagation is rprivate. Skipping mount-point propagation check for /var/run/docker.sock
+[2026-02-16T19:01:17.147782819Z][docker-desktop-user-distro.apiproxy] mounting /var/run/docker.sock to /mnt/wsl/docker-desktop-bind-mounts/Ubuntu/docker.sock
+[2026-02-16T19:01:17.152005938Z][docker-desktop-user-distro.ipc] 74c20de0-WSLIntegrationProxy -> /mnt/wsl/docker-desktop/shared-sockets/host-services/backend.sock BackendCLI
+[2026-02-16T19:01:17.153619476Z][docker-desktop-user-distro.ipc] ba3a5ffd-CrossDistroService -> /var/run/docker.sock WSL2DistroProxy
+[2026-02-16T19:01:17.154103037Z][docker-desktop-user-distro.ipc] starting 8dadd5d6-dockerCLISock for component WSLIntegrationProxy on /var/run/docker-cli.sock
+[2026-02-16T19:01:17.154216286Z][docker-desktop-user-distro.ipc] run 15ec5353-cross-distro for component Ubuntu on /mnt/wsl/docker-desktop/shared-sockets/guest-services/distro-services/ubuntu.sock
+[2026-02-16T19:01:17.155009795Z][docker-desktop-user-distro.version][W] failed to read component versions: open /opt/docker-desktop/componentsVersion.json: no such file or directory
+[2026-02-16T19:01:17.166565276Z][docker-desktop-user-distro] creating symlink for /usr/bin/docker-credential-desktop.exe
+[2026-02-16T19:01:17.166766636Z][docker-desktop-user-distro] cli tools directory /mnt/wsl/docker-desktop/cli-tools has contents
+[2026-02-16T19:01:17.166792179Z][docker-desktop-user-distro] populating cli tools from /mnt/wsl/docker-desktop/cli-tools
+[2026-02-16T19:01:17.167208618Z][docker-desktop-user-distro] creating symlink for /usr/bin/compose-bridge
+[2026-02-16T19:01:17.167265416Z][docker-desktop-user-distro][W] skipping symlink for /usr/bin/docker, binary found
+[2026-02-16T19:01:17.167295157Z][docker-desktop-user-distro] creating symlink for /usr/bin/hub-tool
+[2026-02-16T19:01:17.167462328Z][docker-desktop-user-distro] creating symlink for /usr/local/bin/kubectl
+[2026-02-16T19:01:17.167789283Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-ai
+[2026-02-16T19:01:17.167930032Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-buildx
+[2026-02-16T19:01:17.168007240Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-cloud
+[2026-02-16T19:01:17.168078189Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-compose
+[2026-02-16T19:01:17.168154457Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-debug
+[2026-02-16T19:01:17.168223306Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-desktop
+[2026-02-16T19:01:17.168295782Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-extension
+[2026-02-16T19:01:17.168360728Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-init
+[2026-02-16T19:01:17.168446781Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-mcp
+[2026-02-16T19:01:17.168518158Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-model
+[2026-02-16T19:01:17.168594456Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-sbom
+[2026-02-16T19:01:17.168661030Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-scout
+[2026-02-16T19:01:17.169089370Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/bash-completion/completions/docker, binary found
+[2026-02-16T19:01:17.169217552Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/fish/vendor_completions.d/docker.fish, binary found
+[2026-02-16T19:01:17.169381287Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/zsh/vendor-completions/_docker, binary found
+[2026-02-16T19:01:17.169411463Z][docker-desktop-user-distro] cli tools successfully installed
+[2026-02-16T19:01:17.169432713Z][docker-desktop-user-distro] creating symlink for /usr/bin/docker-compose
+[2026-02-16T19:01:17.169609980Z][docker-desktop-user-distro] docker-desktop-user-distro proxy has started
+[2026-02-16T19:01:18.277928454Z][docker-desktop-user-distro.ipc] (a93b4771-0-1) 15ec5353-cross-distro S<-C ede03a0c-cross-distro-router GET /check
+[2026-02-16T19:01:18.278055752Z][docker-desktop-user-distro.ipc] (a93b4771-0-1-1) ba3a5ffd-CrossDistroService C->S WSL2DistroProxy GET /desktop-diagnostics/ping
+[2026-02-16T19:01:18.278604028Z][docker-desktop-user-distro.ipc] (ddde7c66-0) 9bfd17c4-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/desktop-diagnostics/ping","userAgent":"..."}
+[2026-02-16T19:01:18.280279219Z][docker-desktop-user-distro.ipc] (ddde7c66-0) 9bfd17c4-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.709136ms): OK
+[2026-02-16T19:01:18.280525961Z][docker-desktop-user-distro.ipc] (ddde7c66-1) 9bfd17c4-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/desktop-diagnostics/ping","userAgent":"..."}
+[2026-02-16T19:01:18.283088535Z][docker-desktop-user-distro.ipc] (ddde7c66-1) 9bfd17c4-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (2.581218ms): OK
+[2026-02-16T19:01:18.283330700Z][docker-desktop-user-distro.ipc] (a93b4771-0-1-1) ba3a5ffd-CrossDistroService C<-S UnknownServer GET /desktop-diagnostics/ping (5.275058ms): OK
+[2026-02-16T19:01:18.283574954Z][docker-desktop-user-distro.ipc] (a93b4771-0-1) 15ec5353-cross-distro S->C ede03a0c-cross-distro-router GET /check (5.655118ms): OK
+[2026-02-16T19:08:58.274600086Z][docker-desktop-user-distro] docker-desktop-proxy has terminated on signal terminated
+-------------------------------------------------------------------------------->8
+[2026-02-16T19:09:01.066428155Z][docker-desktop-user-distro.version][W] failed to read component versions: open /opt/docker-desktop/componentsVersion.json: no such file or directory
+[2026-02-16T19:09:01.066945851Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/extension-manager.sock to 0660
+[2026-02-16T19:09:01.066994190Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/modules-manager.sock to 0660
+[2026-02-16T19:09:01.067003587Z][docker-desktop-user-distro] changed the mode of the socket /mnt/wsl/docker-desktop/shared-sockets/host-services/docker-desktop-build.sock to 0660
+[2026-02-16T19:09:01.067033303Z][docker-desktop-user-distro.ipc] 476b25ba-LinuxProxyCMD -> /mnt/wsl/docker-desktop/shared-sockets/host-services/backend.sock BackendAPI
+[2026-02-16T19:09:01.067060562Z][docker-desktop-user-distro.apiproxy] Requested propagation is rprivate. Skipping mount-point propagation check for /var/run/docker.sock
+[2026-02-16T19:09:01.068620806Z][docker-desktop-user-distro.apiproxy] mounting /var/run/docker.sock to /mnt/wsl/docker-desktop-bind-mounts/Ubuntu/docker.sock
+[2026-02-16T19:09:01.071908292Z][docker-desktop-user-distro.ipc] 5ffdd2be-WSLIntegrationProxy -> /mnt/wsl/docker-desktop/shared-sockets/host-services/backend.sock BackendCLI
+[2026-02-16T19:09:01.072092695Z][docker-desktop-user-distro.ipc] c0a26bbc-CrossDistroService -> /var/run/docker.sock WSL2DistroProxy
+[2026-02-16T19:09:01.072310494Z][docker-desktop-user-distro.ipc] run 39a83d19-cross-distro for component Ubuntu on /mnt/wsl/docker-desktop/shared-sockets/guest-services/distro-services/ubuntu.sock
+[2026-02-16T19:09:01.072807549Z][docker-desktop-user-distro.version][W] failed to read component versions: open /opt/docker-desktop/componentsVersion.json: no such file or directory
+[2026-02-16T19:09:01.073465277Z][docker-desktop-user-distro.ipc] starting d8957fb4-dockerCLISock for component WSLIntegrationProxy on /var/run/docker-cli.sock
+[2026-02-16T19:09:01.080473515Z][docker-desktop-user-distro] creating symlink for /usr/bin/docker-credential-desktop.exe
+[2026-02-16T19:09:01.080646667Z][docker-desktop-user-distro] cli tools directory /mnt/wsl/docker-desktop/cli-tools has contents
+[2026-02-16T19:09:01.080667418Z][docker-desktop-user-distro] populating cli tools from /mnt/wsl/docker-desktop/cli-tools
+[2026-02-16T19:09:01.080825463Z][docker-desktop-user-distro] creating symlink for /usr/bin/compose-bridge
+[2026-02-16T19:09:01.080951505Z][docker-desktop-user-distro][W] skipping symlink for /usr/bin/docker, binary found
+[2026-02-16T19:09:01.080982287Z][docker-desktop-user-distro] creating symlink for /usr/bin/hub-tool
+[2026-02-16T19:09:01.081286419Z][docker-desktop-user-distro] creating symlink for /usr/local/bin/kubectl
+[2026-02-16T19:09:01.082109792Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-ai
+[2026-02-16T19:09:01.082252643Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-buildx
+[2026-02-16T19:09:01.082404232Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-cloud
+[2026-02-16T19:09:01.082496568Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-compose
+[2026-02-16T19:09:01.082572300Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-debug
+[2026-02-16T19:09:01.082669426Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-desktop
+[2026-02-16T19:09:01.082759750Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-extension
+[2026-02-16T19:09:01.082870920Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-init
+[2026-02-16T19:09:01.082940631Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-mcp
+[2026-02-16T19:09:01.083006112Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-model
+[2026-02-16T19:09:01.083072746Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-sbom
+[2026-02-16T19:09:01.083149268Z][docker-desktop-user-distro] creating symlink for /usr/local/lib/docker/cli-plugins/docker-scout
+[2026-02-16T19:09:01.083693718Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/bash-completion/completions/docker, binary found
+[2026-02-16T19:09:01.083800252Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/fish/vendor_completions.d/docker.fish, binary found
+[2026-02-16T19:09:01.083982180Z][docker-desktop-user-distro][W] skipping symlink for /usr/share/zsh/vendor-completions/_docker, binary found
+[2026-02-16T19:09:01.084013168Z][docker-desktop-user-distro] cli tools successfully installed
+[2026-02-16T19:09:01.084020956Z][docker-desktop-user-distro] creating symlink for /usr/bin/docker-compose
+[2026-02-16T19:09:01.084118758Z][docker-desktop-user-distro] docker-desktop-user-distro proxy has started
+[2026-02-16T19:09:02.191952987Z][docker-desktop-user-distro.ipc] (80434a08-0-1) 39a83d19-cross-distro S<-C a36bb8cc-cross-distro-router GET /check
+[2026-02-16T19:09:02.192041469Z][docker-desktop-user-distro.ipc] (80434a08-0-1-1) c0a26bbc-CrossDistroService C->S WSL2DistroProxy GET /desktop-diagnostics/ping
+[2026-02-16T19:09:02.192462634Z][docker-desktop-user-distro.ipc] (aa96e365-0) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/desktop-diagnostics/ping","userAgent":"..."}
+[2026-02-16T19:09:02.194794473Z][docker-desktop-user-distro.ipc] (aa96e365-0) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.362279ms): OK
+[2026-02-16T19:09:02.194867983Z][docker-desktop-user-distro.ipc] (aa96e365-1) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/desktop-diagnostics/ping","userAgent":"..."}
+[2026-02-16T19:09:02.196315575Z][docker-desktop-user-distro.ipc] (aa96e365-1) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.466771ms): OK
+[2026-02-16T19:09:02.196435612Z][docker-desktop-user-distro.ipc] (80434a08-0-1-1) c0a26bbc-CrossDistroService C<-S UnknownServer GET /desktop-diagnostics/ping (4.405117ms): OK
+[2026-02-16T19:09:02.196582700Z][docker-desktop-user-distro.ipc] (80434a08-0-1) 39a83d19-cross-distro S->C a36bb8cc-cross-distro-router GET /check (4.636884ms): OK
+[2026-02-16T19:09:28.035690141Z][docker-desktop-user-distro.ipc] (aa96e365-2) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:09:28.038398129Z][docker-desktop-user-distro.ipc] (aa96e365-2) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.737279ms): OK
+[2026-02-16T19:09:28.038452008Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:09:28.039408423Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (954.971µs)
+[2026-02-16T19:09:28.039525533Z][docker-desktop-user-distro.ipc] (aa96e365-3) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:09:28.042142626Z][docker-desktop-user-distro.ipc] (aa96e365-3) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (2.645419ms): OK
+[2026-02-16T19:09:28.107112021Z][docker-desktop-user-distro.ipc] (aa96e365-4) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:09:28.109266045Z][docker-desktop-user-distro.ipc] (aa96e365-4) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.182923ms): OK
+[2026-02-16T19:09:28.109306355Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:09:28.110187695Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (879.668µs)
+[2026-02-16T19:09:28.110272528Z][docker-desktop-user-distro.ipc] (aa96e365-5) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:09:28.112177049Z][docker-desktop-user-distro.ipc] (aa96e365-5) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.926436ms): OK
+[2026-02-16T19:09:28.113735151Z][docker-desktop-user-distro.ipc] (aa96e365-6) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:09:28.115295806Z][docker-desktop-user-distro.ipc] (aa96e365-6) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.593251ms): OK
+[2026-02-16T19:09:28.115370487Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:09:28.116073798Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (703.687µs)
+[2026-02-16T19:09:28.116138388Z][docker-desktop-user-distro.ipc] (aa96e365-7) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:09:28.117213210Z][docker-desktop-user-distro.ipc] (aa96e365-7) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.095338ms): OK
+[2026-02-16T19:09:28.117318476Z][docker-desktop-user-distro.ipc] (aa96e365-8) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:09:28.118266796Z][docker-desktop-user-distro.ipc] (aa96e365-8) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (962.434µs): OK
+[2026-02-16T19:09:28.118313239Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/json
+[2026-02-16T19:09:28.140905071Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/json (22.58844ms)
+[2026-02-16T19:09:28.141027353Z][docker-desktop-user-distro.ipc] (aa96e365-9) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:09:28.142701905Z][docker-desktop-user-distro.ipc] (aa96e365-9) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.694364ms): OK
+[2026-02-16T19:09:28.143430749Z][docker-desktop-user-distro.ipc] (aa96e365-10) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/nginx:latest/json","userAgent":"..."}
+[2026-02-16T19:09:28.144565928Z][docker-desktop-user-distro.ipc] (aa96e365-10) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.160992ms): OK
+[2026-02-16T19:09:28.144595306Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/nginx:latest/json
+[2026-02-16T19:09:28.146112532Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/nginx:latest/json (1.514411ms)
+[2026-02-16T19:09:28.146194505Z][docker-desktop-user-distro.ipc] (aa96e365-11) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/nginx:latest/json","userAgent":"..."}
+[2026-02-16T19:09:28.147273380Z][docker-desktop-user-distro.ipc] (aa96e365-11) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.102573ms): OK
+[2026-02-16T19:09:28.150329181Z][docker-desktop-user-distro.apiproxy] usage ImagePullOthersLinux-from-wsl + 1
+[2026-02-16T19:09:28.150401748Z][docker-desktop-user-distro.ipc] (aa96e365-13) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/v1.41/images/create","urlRawQuery":"fromImage=nginx\u0026tag=latest","userAgent":"..."}
+[2026-02-16T19:09:28.152063386Z][docker-desktop-user-distro.ipc] (aa96e365-13) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.682747ms): OK
+[2026-02-16T19:09:28.152090448Z][docker-desktop-user-distro.apiproxy] >> POST /v1.41/images/create?fromImage=nginx&tag=latest
+[2026-02-16T19:10:18.617566207Z][docker-desktop-user-distro.apiproxy] << POST /v1.41/images/create?fromImage=nginx&tag=latest (56.083784118s)
+[2026-02-16T19:10:18.617792888Z][docker-desktop-user-distro.ipc] (aa96e365-14) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/v1.41/images/create","urlRawQuery":"fromImage=nginx\u0026tag=latest","userAgent":"..."}
+[2026-02-16T19:10:18.619164909Z][docker-desktop-user-distro.ipc] (aa96e365-14) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.411188ms): OK
+[2026-02-16T19:10:18.621287556Z][docker-desktop-user-distro.ipc] (aa96e365-15) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:10:18.623564218Z][docker-desktop-user-distro.ipc] (aa96e365-15) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.320178ms): OK
+[2026-02-16T19:10:18.623628059Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/json
+[2026-02-16T19:10:18.679291990Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/json (55.667538ms)
+[2026-02-16T19:10:18.679419670Z][docker-desktop-user-distro.ipc] (aa96e365-16) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:10:18.681165506Z][docker-desktop-user-distro.ipc] (aa96e365-16) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.764101ms): OK
+[2026-02-16T19:10:18.681531439Z][docker-desktop-user-distro.ipc] (aa96e365-17) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/nginx:latest/json","userAgent":"..."}
+[2026-02-16T19:10:18.682809198Z][docker-desktop-user-distro.ipc] (aa96e365-17) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.30104ms): OK
+[2026-02-16T19:10:18.682848288Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/nginx:latest/json
+[2026-02-16T19:10:18.723293655Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/nginx:latest/json (40.439133ms)
+[2026-02-16T19:10:18.723512127Z][docker-desktop-user-distro.ipc] (aa96e365-18) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/nginx:latest/json","userAgent":"..."}
+[2026-02-16T19:10:18.724942276Z][docker-desktop-user-distro.ipc] (aa96e365-18) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.46297ms): OK
+[2026-02-16T19:10:18.725541860Z][docker-desktop-user-distro.ipc] (aa96e365-19) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:10:18.727059476Z][docker-desktop-user-distro.ipc] (aa96e365-19) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.541084ms): OK
+[2026-02-16T19:10:18.727086696Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/json
+[2026-02-16T19:10:18.768735842Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/json (41.645467ms)
+[2026-02-16T19:10:18.768874997Z][docker-desktop-user-distro.ipc] (aa96e365-20) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:10:18.770576920Z][docker-desktop-user-distro.ipc] (aa96e365-20) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.724624ms): OK
+[2026-02-16T19:10:18.770967068Z][docker-desktop-user-distro.ipc] (aa96e365-21) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/nginx:latest/json","userAgent":"..."}
+[2026-02-16T19:10:18.772228457Z][docker-desktop-user-distro.ipc] (aa96e365-21) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.281402ms): OK
+[2026-02-16T19:10:18.772269713Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/nginx:latest/json
+[2026-02-16T19:10:18.804811720Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/nginx:latest/json (32.535549ms)
+[2026-02-16T19:10:18.804951550Z][docker-desktop-user-distro.ipc] (aa96e365-22) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/nginx:latest/json","userAgent":"..."}
+[2026-02-16T19:10:18.806384667Z][docker-desktop-user-distro.ipc] (aa96e365-22) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.468373ms): OK
+[2026-02-16T19:10:18.815814781Z][docker-desktop-user-distro.ipc] (aa96e365-23) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:10:18.817289700Z][docker-desktop-user-distro.ipc] (aa96e365-23) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.50944ms): OK
+[2026-02-16T19:10:18.817323920Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/json
+[2026-02-16T19:10:18.862818173Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/json (45.49037ms)
+[2026-02-16T19:10:18.862931280Z][docker-desktop-user-distro.ipc] (aa96e365-24) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/json","userAgent":"..."}
+[2026-02-16T19:10:18.864452323Z][docker-desktop-user-distro.ipc] (aa96e365-24) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.54334ms): OK
+[2026-02-16T19:10:18.864766396Z][docker-desktop-user-distro.ipc] (aa96e365-25) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/images/sha256:341bf0f3ce6c5277d6002cf6e1fb0319fa4252add24ab6a0e262e0056d313208/json","userAgent":"..."}
+[2026-02-16T19:10:18.866763875Z][docker-desktop-user-distro.ipc] (aa96e365-25) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.017833ms): OK
+[2026-02-16T19:10:18.866801425Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/images/sha256:341bf0f3ce6c5277d6002cf6e1fb0319fa4252add24ab6a0e262e0056d313208/json
+[2026-02-16T19:10:18.899187618Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/images/sha256:341bf0f3ce6c5277d6002cf6e1fb0319fa4252add24ab6a0e262e0056d313208/json (32.381738ms)
+[2026-02-16T19:10:18.899338734Z][docker-desktop-user-distro.ipc] (aa96e365-26) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/images/sha256:341bf0f3ce6c5277d6002cf6e1fb0319fa4252add24ab6a0e262e0056d313208/json","userAgent":"..."}
+[2026-02-16T19:10:18.900565429Z][docker-desktop-user-distro.ipc] (aa96e365-26) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.27253ms): OK
+[2026-02-16T19:10:18.903514113Z][docker-desktop-user-distro.apiproxy] usage ContainerCreateOthersLinux-from-wsl + 1
+[2026-02-16T19:10:18.903592649Z][docker-desktop-user-distro.ipc] (aa96e365-28) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/v1.41/containers/create","urlRawQuery":"name=my_first_terraform_site","userAgent":"..."}
+[2026-02-16T19:10:18.905005803Z][docker-desktop-user-distro.ipc] (aa96e365-28) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.437011ms): OK
+[2026-02-16T19:10:18.905044481Z][docker-desktop-user-distro.apiproxy] >> POST /v1.41/containers/create?name=my_first_terraform_site
+[2026-02-16T19:10:19.029721803Z][docker-desktop-user-distro.apiproxy] << POST /v1.41/containers/create?name=my_first_terraform_site (124.670537ms)
+[2026-02-16T19:10:19.029836330Z][docker-desktop-user-distro.ipc] (aa96e365-30) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/v1.41/containers/create","urlRawQuery":"name=my_first_terraform_site","userAgent":"..."}
+[2026-02-16T19:10:19.031618482Z][docker-desktop-user-distro.ipc] (aa96e365-30) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.812311ms): OK
+[2026-02-16T19:10:19.033564059Z][docker-desktop-user-distro.apiproxy] usage ContainerStartOthersLinux-from-wsl + 1
+[2026-02-16T19:10:19.033630759Z][docker-desktop-user-distro.ipc] (aa96e365-32) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/start","userAgent":"..."}
+[2026-02-16T19:10:19.035002698Z][docker-desktop-user-distro.ipc] (aa96e365-32) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.390974ms): OK
+[2026-02-16T19:10:19.035044887Z][docker-desktop-user-distro.apiproxy] >> POST /v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/start
+[2026-02-16T19:10:19.037963905Z][docker-desktop-user-distro.apiproxy] usage ExposePortCountOthersLinux-from-wsl + 1
+[2026-02-16T19:10:19.038041104Z][docker-desktop-user-distro.ports] exposer.Approve(92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375, /my_first_terraform_site, [TCP 0.0.0.0:8080])
+[2026-02-16T19:10:19.042259576Z][docker-desktop-user-distro.ports] exposer.Add(92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375, /my_first_terraform_site, [TCP 0.0.0.0:8080 -> 127.0.0.1:0])
+[2026-02-16T19:10:19.163897761Z][docker-desktop-user-distro.ports] exposer.Remove(92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375)
+[2026-02-16T19:10:19.406562271Z][docker-desktop-user-distro.apiproxy] << POST /v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/start (371.507802ms)
+[2026-02-16T19:10:19.406734058Z][docker-desktop-user-distro.ipc] (aa96e365-34) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/start","userAgent":"..."}
+[2026-02-16T19:10:19.408370350Z][docker-desktop-user-distro.ipc] (aa96e365-34) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.671808ms): OK
+[2026-02-16T19:10:19.408508834Z][docker-desktop-user-distro.ipc] (aa96e365-35) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/containers/json","urlRawQuery":"all=1\u0026limit=0","userAgent":"..."}
+[2026-02-16T19:10:19.410283930Z][docker-desktop-user-distro.ipc] (aa96e365-35) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.801575ms): OK
+[2026-02-16T19:10:19.410313956Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/containers/json?all=1&limit=0
+[2026-02-16T19:10:19.413713787Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/containers/json?all=1&limit=0 (3.399338ms)
+[2026-02-16T19:10:19.413801359Z][docker-desktop-user-distro.ipc] (aa96e365-36) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/containers/json","urlRawQuery":"all=1\u0026limit=0","userAgent":"..."}
+[2026-02-16T19:10:19.415136001Z][docker-desktop-user-distro.ipc] (aa96e365-36) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.355944ms): OK
+[2026-02-16T19:10:19.517274466Z][docker-desktop-user-distro.ipc] (aa96e365-37) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/json","userAgent":"..."}
+[2026-02-16T19:10:19.521488965Z][docker-desktop-user-distro.ipc] (aa96e365-37) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (4.287224ms): OK
+[2026-02-16T19:10:19.521543715Z][docker-desktop-user-distro.apiproxy] >> GET /v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/json
+[2026-02-16T19:10:19.525205261Z][docker-desktop-user-distro.apiproxy] << GET /v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/json (3.660951ms)
+[2026-02-16T19:10:19.525315229Z][docker-desktop-user-distro.ipc] (aa96e365-38) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.41/containers/92cbc4784d4a7f11f327ec0d87b0202246fd728b4d971131aa81f089834b6375/json","userAgent":"..."}
+[2026-02-16T19:10:19.526692482Z][docker-desktop-user-distro.ipc] (aa96e365-38) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.389851ms): OK
+[2026-02-16T19:17:15.827272483Z][docker-desktop-user-distro.ipc] (aa96e365-39) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:15.830549755Z][docker-desktop-user-distro.ipc] (aa96e365-39) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (3.364804ms): OK
+[2026-02-16T19:17:15.830642792Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:17:15.831765557Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (1.120467ms)
+[2026-02-16T19:17:15.832002960Z][docker-desktop-user-distro.ipc] (aa96e365-40) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:15.834555791Z][docker-desktop-user-distro.ipc] (aa96e365-40) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (2.691169ms): OK
+[2026-02-16T19:17:16.063964417Z][docker-desktop-user-distro.ipc] (aa96e365-41) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:16.065397605Z][docker-desktop-user-distro.ipc] (aa96e365-41) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.460662ms): OK
+[2026-02-16T19:17:16.065440361Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:17:16.066162822Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (719.385µs)
+[2026-02-16T19:17:16.066234313Z][docker-desktop-user-distro.ipc] (aa96e365-42) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:16.066832400Z][docker-desktop-user-distro.ipc] (aa96e365-43) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/timed-activity: {"duration":0,"name":"Go-http-client/1.1 /grpc"}
+[2026-02-16T19:17:16.067590567Z][docker-desktop-user-distro.ipc] (aa96e365-42) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.376556ms): OK
+[2026-02-16T19:17:16.068089004Z][docker-desktop-user-distro.ipc] (aa96e365-43) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/timed-activity (1.293022ms): OK
+[2026-02-16T19:17:16.068116363Z][docker-desktop-user-distro.apiproxy] >> POST /grpc
+[2026-02-16T19:17:16.069486833Z][docker-desktop-user-distro.ipc] (aa96e365-44) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:16.069799037Z][docker-desktop-user-distro.apiproxy] << POST /grpc (1.680654ms)
+[2026-02-16T19:17:16.070643877Z][docker-desktop-user-distro.ipc] (aa96e365-44) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.178567ms): OK
+[2026-02-16T19:17:16.070675598Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:17:16.071279158Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (601.78µs)
+[2026-02-16T19:17:16.071344903Z][docker-desktop-user-distro.ipc] (aa96e365-45) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:16.072660901Z][docker-desktop-user-distro.ipc] (aa96e365-45) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.334093ms): OK
+[2026-02-16T19:17:16.075177025Z][docker-desktop-user-distro.ipc] (aa96e365-46) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:16.076722771Z][docker-desktop-user-distro.ipc] (aa96e365-46) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.570298ms): OK
+[2026-02-16T19:17:16.076762634Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:17:16.077630243Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (866.147µs)
+[2026-02-16T19:17:16.077723113Z][docker-desktop-user-distro.ipc] (aa96e365-47) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:17:16.078055418Z][docker-desktop-user-distro.ipc] (aa96e365-48) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/timed-activity: {"duration":0,"name":"Go-http-client/1.1 /grpc"}
+[2026-02-16T19:17:16.078836580Z][docker-desktop-user-distro.ipc] (aa96e365-47) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.142773ms): OK
+[2026-02-16T19:17:16.079102652Z][docker-desktop-user-distro.ipc] (aa96e365-48) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/timed-activity (1.064544ms): OK
+[2026-02-16T19:17:16.079130308Z][docker-desktop-user-distro.apiproxy] >> POST /grpc
+[2026-02-16T19:17:16.079893966Z][docker-desktop-user-distro.apiproxy][W] Error forwarding raw stream from dockerd: write unix /var/run/docker.sock->@: write: broken pipe
+[2026-02-16T19:17:16.080894977Z][docker-desktop-user-distro.apiproxy] << POST /grpc (1.760035ms)
+[2026-02-16T19:17:16.082097269Z][docker-desktop-user-distro.ipc] (aa96e365-49) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.44/version","userAgent":"..."}
+[2026-02-16T19:17:16.083374224Z][docker-desktop-user-distro.ipc] (aa96e365-49) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.297988ms): OK
+[2026-02-16T19:17:16.083408915Z][docker-desktop-user-distro.apiproxy] >> GET /v1.44/version
+[2026-02-16T19:17:16.122632358Z][docker-desktop-user-distro.apiproxy] << GET /v1.44/version (39.219142ms)
+[2026-02-16T19:17:16.122746108Z][docker-desktop-user-distro.ipc] (aa96e365-50) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.44/version","userAgent":"..."}
+[2026-02-16T19:17:16.123999029Z][docker-desktop-user-distro.ipc] (aa96e365-50) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.269913ms): OK
+[2026-02-16T19:17:16.125408792Z][docker-desktop-user-distro.ipc] (aa96e365-51) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/timed-activity: {"duration":0,"name":"Go-http-client/1.1 /grpc"}
+[2026-02-16T19:17:16.126501222Z][docker-desktop-user-distro.ipc] (aa96e365-51) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/timed-activity (1.114193ms): OK
+[2026-02-16T19:17:16.126532674Z][docker-desktop-user-distro.apiproxy] >> POST /grpc
+[2026-02-16T19:17:16.209152529Z][docker-desktop-user-distro.ipc] (aa96e365-52) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/session","userAgent":"..."}
+[2026-02-16T19:17:16.211481526Z][docker-desktop-user-distro.ipc] (aa96e365-52) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.35764ms): OK
+[2026-02-16T19:17:16.211514139Z][docker-desktop-user-distro.apiproxy] >> POST /session
+[2026-02-16T19:17:16.221455927Z][docker-desktop-user-distro.apiproxy][W] Error forwarding raw stream from dockerd: write unix /var/run/docker.sock->@: write: broken pipe
+[2026-02-16T19:17:16.221543934Z][docker-desktop-user-distro.apiproxy] << POST /session (10.023035ms)
+[2026-02-16T19:17:16.221601728Z][docker-desktop-user-distro.ipc] (aa96e365-53) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/session","userAgent":"..."}
+[2026-02-16T19:17:16.223223395Z][docker-desktop-user-distro.ipc] (aa96e365-53) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.646223ms): OK
+[2026-02-16T19:17:16.244600579Z][docker-desktop-user-distro.ipc] (aa96e365-54) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/timed-activity: {"duration":0,"name":"Go-http-client/1.1 /grpc"}
+[2026-02-16T19:17:16.246027659Z][docker-desktop-user-distro.ipc] (aa96e365-54) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/timed-activity (1.456493ms): OK
+[2026-02-16T19:17:16.246062277Z][docker-desktop-user-distro.apiproxy] >> POST /grpc
+[2026-02-16T19:17:16.248349077Z][docker-desktop-user-distro.apiproxy][W] Error forwarding raw stream from dockerd: write unix /var/run/docker.sock->@: write: broken pipe
+[2026-02-16T19:17:16.248406984Z][docker-desktop-user-distro.apiproxy] << POST /grpc (2.343864ms)
+[2026-02-16T19:17:16.251995343Z][docker-desktop-user-distro.ipc] (aa96e365-55) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/session","userAgent":"..."}
+[2026-02-16T19:17:16.265725799Z][docker-desktop-user-distro.ipc] (aa96e365-55) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (13.752845ms): OK
+[2026-02-16T19:17:16.265788810Z][docker-desktop-user-distro.apiproxy] >> POST /session
+[2026-02-16T19:17:57.187459111Z][docker-desktop-user-distro.apiproxy][W] Error forwarding raw stream from dockerd: write unix /var/run/docker.sock->@: write: broken pipe
+[2026-02-16T19:17:57.187655147Z][docker-desktop-user-distro.apiproxy] << POST /session (46.45459427s)
+[2026-02-16T19:17:57.187815565Z][docker-desktop-user-distro.ipc] (aa96e365-56) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/session","userAgent":"..."}
+[2026-02-16T19:17:57.190246489Z][docker-desktop-user-distro.ipc] (aa96e365-56) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (2.507817ms): OK
+[2026-02-16T19:17:57.190281666Z][docker-desktop-user-distro.apiproxy] << POST /grpc (46.596472855s)
+[2026-02-16T19:18:07.581024284Z][docker-desktop-user-distro.ipc] (aa96e365-57) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:18:07.583331428Z][docker-desktop-user-distro.ipc] (aa96e365-57) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.352565ms): OK
+[2026-02-16T19:18:07.583371361Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:18:07.584393457Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (1.018696ms)
+[2026-02-16T19:18:07.584528950Z][docker-desktop-user-distro.ipc] (aa96e365-58) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:18:07.586907874Z][docker-desktop-user-distro.ipc] (aa96e365-58) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (2.422271ms): OK
+[2026-02-16T19:18:07.587092605Z][docker-desktop-user-distro.ipc] (aa96e365-59) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:18:07.588721270Z][docker-desktop-user-distro.ipc] (aa96e365-59) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.651584ms): OK
+[2026-02-16T19:18:07.588760546Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:18:07.589593276Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (831.456µs)
+[2026-02-16T19:18:07.589676417Z][docker-desktop-user-distro.ipc] (aa96e365-60) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:18:07.591400051Z][docker-desktop-user-distro.ipc] (aa96e365-60) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.721827ms): OK
+[2026-02-16T19:18:07.593245437Z][docker-desktop-user-distro.apiproxy] usage ContainerCreateCliLinux-from-wsl + 1
+[2026-02-16T19:18:07.593317236Z][docker-desktop-user-distro.ipc] (aa96e365-62) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/v1.44/containers/create","urlRawQuery":"name=my-app","userAgent":"..."}
+[2026-02-16T19:18:07.596096003Z][docker-desktop-user-distro.ipc] (aa96e365-62) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.797816ms): OK
+[2026-02-16T19:18:07.596156446Z][docker-desktop-user-distro.apiproxy] >> POST /v1.44/containers/create?name=my-app
+[2026-02-16T19:18:07.652324710Z][docker-desktop-user-distro.apiproxy] << POST /v1.44/containers/create?name=my-app (56.164349ms)
+[2026-02-16T19:18:07.652443769Z][docker-desktop-user-distro.ipc] (aa96e365-63) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/v1.44/containers/create","urlRawQuery":"name=my-app","userAgent":"..."}
+[2026-02-16T19:18:07.654752808Z][docker-desktop-user-distro.ipc] (aa96e365-63) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (2.344273ms): OK
+[2026-02-16T19:18:07.664956893Z][docker-desktop-user-distro.ipc] (aa96e365-65) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/wait","urlRawQuery":"condition=next-exit","userAgent":"..."}
+[2026-02-16T19:18:07.667627852Z][docker-desktop-user-distro.ipc] (aa96e365-65) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (2.702404ms): OK
+[2026-02-16T19:18:07.668054707Z][docker-desktop-user-distro.apiproxy] >> POST /v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/wait?condition=next-exit
+[2026-02-16T19:18:07.675581084Z][docker-desktop-user-distro.apiproxy] usage ContainerStartCliLinux-from-wsl + 1
+[2026-02-16T19:18:07.675708273Z][docker-desktop-user-distro.ipc] (aa96e365-67) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"POST","urlPath":"/v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/start","userAgent":"..."}
+[2026-02-16T19:18:07.680827707Z][docker-desktop-user-distro.ipc] (aa96e365-67) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (5.158661ms): OK
+[2026-02-16T19:18:07.680990617Z][docker-desktop-user-distro.apiproxy] >> POST /v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/start
+[2026-02-16T19:18:07.685554237Z][docker-desktop-user-distro.apiproxy] usage ExposePortCountCliLinux-from-wsl + 1
+[2026-02-16T19:18:07.685630283Z][docker-desktop-user-distro.ports] exposer.Approve(7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b, /my-app, [TCP 0.0.0.0:5000])
+[2026-02-16T19:18:07.689590132Z][docker-desktop-user-distro.ports] exposer.Add(7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b, /my-app, [TCP 0.0.0.0:5000 -> 127.0.0.1:0])
+[2026-02-16T19:18:07.702727515Z][docker-desktop-user-distro.ports] exposer.Remove(7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b)
+[2026-02-16T19:18:07.928381523Z][docker-desktop-user-distro.apiproxy] << POST /v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/start (247.396898ms)
+[2026-02-16T19:18:07.928613056Z][docker-desktop-user-distro.ipc] (aa96e365-69) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/start","userAgent":"..."}
+[2026-02-16T19:18:07.928653989Z][docker-desktop-user-distro.apiproxy] Context canceled, closing connection for "/v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/wait?condition=next-exit"
+[2026-02-16T19:18:07.929263118Z][docker-desktop-user-distro.apiproxy] << POST /v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/wait?condition=next-exit (261.210567ms)
+[2026-02-16T19:18:07.934043447Z][docker-desktop-user-distro.ipc] (aa96e365-69) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (5.497755ms): OK
+[2026-02-16T19:18:07.934133230Z][docker-desktop-user-distro.ipc] (aa96e365-70) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"POST","urlPath":"/v1.44/containers/7af1af5df6fbf834c8b2c7cfcd5e0d8acdaf4eb3124c10a82a2734dbba26437b/wait","urlRawQuery":"condition=next-exit","userAgent":"..."}
+[2026-02-16T19:18:07.935475471Z][docker-desktop-user-distro.ipc] (aa96e365-70) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.36628ms): OK
+[2026-02-16T19:18:15.720441805Z][docker-desktop-user-distro.ipc] (aa96e365-71) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:18:15.723800745Z][docker-desktop-user-distro.ipc] (aa96e365-71) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (3.405362ms): OK
+[2026-02-16T19:18:15.723857216Z][docker-desktop-user-distro.apiproxy] >> HEAD /_ping
+[2026-02-16T19:18:15.724806901Z][docker-desktop-user-distro.apiproxy] << HEAD /_ping (947.275µs)
+[2026-02-16T19:18:15.724888637Z][docker-desktop-user-distro.ipc] (aa96e365-72) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"HEAD","urlPath":"/_ping","userAgent":"..."}
+[2026-02-16T19:18:15.726348136Z][docker-desktop-user-distro.ipc] (aa96e365-72) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.48245ms): OK
+[2026-02-16T19:18:15.726473743Z][docker-desktop-user-distro.ipc] (aa96e365-73) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-start: {"method":"GET","urlPath":"/v1.44/containers/json","userAgent":"..."}
+[2026-02-16T19:18:15.727493516Z][docker-desktop-user-distro.ipc] (aa96e365-73) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-start (1.037086ms): OK
+[2026-02-16T19:18:15.727528228Z][docker-desktop-user-distro.apiproxy] >> GET /v1.44/containers/json
+[2026-02-16T19:18:15.737605575Z][docker-desktop-user-distro.apiproxy] << GET /v1.44/containers/json (10.076472ms)
+[2026-02-16T19:18:15.737692364Z][docker-desktop-user-distro.ipc] (aa96e365-74) 476b25ba-LinuxProxyCMD C->S BackendAPI POST /idle/api-call-stop: {"method":"GET","urlPath":"/v1.44/containers/json","userAgent":"..."}
+[2026-02-16T19:18:15.739058240Z][docker-desktop-user-distro.ipc] (aa96e365-74) 476b25ba-LinuxProxyCMD C<-S df297fa6-BackendAPI POST /idle/api-call-stop (1.383538ms): OK

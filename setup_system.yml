@@ -1,0 +1,20 @@
+---
+- name: My first infra automation
+  hosts: local
+  tasks:
+    - name: Ensure git is installed
+      apt:
+        name: git
+        state: present
+
+    - name: Create a devops directory
+      file:
+        path: ~/ansible_magic
+        state: directory
+
+    - name: Clone my devops repo from GitHub
+      git:
+        repo: 'https://github.com/dresky2024/my-devops-begin.git'
+        dest: ~/ansible_magic/my-repo
+        clone: yes
+        update: yes

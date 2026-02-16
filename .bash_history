@@ -1192,3 +1192,87 @@ cat README.txt
 su xxnb
 usermod -aG sudo xxnb
 su xxnb
+pwd
+cd ~
+ls
+ll
+touch setup_project.sh
+nano setup_project.sh
+chmod +x setup_project.sh
+./setup_project.sh
+git --version
+git version 2.43.0
+git config --global user.name "xxnb"
+git config --global user.email "dre-sky@mail.ru"
+git init
+git add .
+git commit -m "My first devops script"
+git remote add origin https://github.com/dresky2024/my-devops-begin.git
+git branch -M main
+git push -u origin main
+docker --version
+pwd
+ll
+cd my_first_app/
+ll
+nano Dockerfile
+docker build -t my-first-image .
+cd ..
+ls
+nano Dockerfile
+docker build -t devops-hero:v1 .
+docker run --rm devops-hero:v1
+mkdir -p .github/workflows
+nano .github/workflows/main.yml
+git add .
+git commit -m "Add GitHub Actions workflow"
+git push origin main
+.github/workflows/main.yml
+nano .github/workflows/main.yml
+cd .github/workflows/main.yml
+cd .github/workflows/
+ll
+rm -rf main.yml 
+nano main.yml
+cd -
+git add .github/workflows/main.yml
+git commit -m "Fix yaml syntax", git push
+git commit -m "Fix yaml syntax"
+git push
+nano .github/workflows/main.yml
+git add .github/workflows/main.yml
+git commit -m "Fix spaces in secrets"
+git push origin main
+cd .github/workflows
+ll
+rm -rf main.yml 
+nano main.yml
+cd -
+git add .github/workflows/main.yml
+git commit -m "Fix yaml spaces for real"
+git push origin main
+sudo apt update
+sudo apt install ansible -y
+nano hosts.ini
+cd ~
+nano hosts.ini
+nano setup_system.yml
+ansible-playbook -i hosts.ini setup_system.yml
+nano setup_system.yml
+rm -rf setup_system.yml
+nano setup_system.yml
+ansible-playbook -i hosts.ini setup_system.yml
+nano setup_system.yml
+ansible-playbook -i hosts.ini setup_system.yml
+wget -O- https://apt.releases.hashicorp.com | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform -y
+sudo rm /etc/apt/sources.list.d/hashicorp.list
+sudo rm /usr/share/keyrings/hashicorp-archive-keyring.gpg
+sudo apt update && sudo apt install -y gnupg software-properties-common curl
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform -y
+terraform -version
+mkdir ~/terraform_test && cd ~/terraform_test
+nano main.tf
